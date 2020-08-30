@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="1055.0" stylesheets="@store.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.pkg3a5.FXML1Controller">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="900.0" stylesheets="@store.css">
+         <children>
+            <AnchorPane prefHeight="603.0" prefWidth="186.0" style="-fx-background-color: #3f1059;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="186.0" layoutX="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/cc.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="17.0" layoutY="139.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="169.0" styleClass="main_btn" stylesheets="@store.css" text="Menu " textAlignment="CENTER" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Corbel" size="38.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="17.0" layoutY="258.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="169.0" styleClass="main_btn" stylesheets="@store.css" text="Gestion Films" textAlignment="CENTER" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Corbel" size="22.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane prefHeight="603.0" prefWidth="16.0" style="-fx-background-color: #ae55e0;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+                  <Button layoutX="17.0" layoutY="338.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="169.0" styleClass="main_btn" stylesheets="@store.css" text="Gestion Spectacles" textAlignment="CENTER" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Corbel" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="17.0" layoutY="417.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="169.0" styleClass="main_btn" text="Consulter Avis / SF" textAlignment="CENTER" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Corbel" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="17.0" layoutY="495.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="169.0" styleClass="main_btn" text="Statistiques" textAlignment="CENTER" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Corbel" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+            <AnchorPane layoutX="188.0" prefHeight="600.0" prefWidth="708.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="188.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane layoutX="-5.0" layoutY="-1.0" prefHeight="22.0" prefWidth="720.0" style="-fx-background-color: #3f1059;" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="-1.0">
+                     <children>
+                        <Label layoutX="13.0" layoutY="-2.0" prefHeight="17.0" prefWidth="573.0" text="Cité De Culture Tunisie" textFill="WHITE">
+                           <font>
+                              <Font name="Microsoft PhagsPa" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="AnchorPane" fx:id="recherche" layoutX="218.0" layoutY="24.0" onDragDetected="#rechercheparNon" prefHeight="563.0" prefWidth="722.0">
+               <children>
+                  <Label layoutY="13.0" prefHeight="44.0" prefWidth="336.0" text="Gestion des espaces">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="numero" layoutX="7.0" layoutY="88.0" prefHeight="31.0" prefWidth="161.0" promptText="Numero du salle" />
+                  <TextField fx:id="nom" layoutX="7.0" layoutY="150.0" prefHeight="31.0" prefWidth="161.0" promptText="nom du salle" />
+                  <TextField fx:id="capacitee" layoutX="8.0" layoutY="211.0" prefHeight="31.0" prefWidth="161.0" promptText="Capacitee" />
+                  <TextField fx:id="superficie" layoutX="8.0" layoutY="287.0" prefHeight="31.0" prefWidth="161.0" promptText="superficie" />
+                  <Button fx:id="btnAjouterCol" layoutX="37.0" layoutY="504.0" mnemonicParsing="false" onAction="#AjouterEspaces" prefHeight="44.0" prefWidth="150.0" text="Ajouter" />
+                  <Button fx:id="btnModifierCol" layoutX="226.0" layoutY="504.0" mnemonicParsing="false" onAction="#ModifierEspaces" prefHeight="44.0" prefWidth="150.0" text="Modifier" />
+                  <Button fx:id="btnSupprimerCol" layoutX="430.0" layoutY="504.0" mnemonicParsing="false" onAction="#SupprimerEspaces" prefHeight="44.0" prefWidth="150.0" text="Supprimer" />
+                  <TextField fx:id="rechercheCol" layoutX="338.0" layoutY="31.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="242.0" promptText="Rechercher" />
+                  <TableView fx:id="tv_espaces_table" layoutX="217.0" layoutY="119.0" onMouseClicked="#showOnClick" prefHeight="306.0" prefWidth="531.0">
+                     <columns>
+                        <TableColumn fx:id="numeroCol" prefWidth="75.0" text="numero" />
+                        <TableColumn fx:id="nomCol" prefWidth="75.0" text="nom" />
+                        <TableColumn fx:id="capaciteeCol" prefWidth="75.0" text="capacitee" />
+                        <TableColumn fx:id="superficieCol" prefWidth="75.0" text="superficie" />
+                        <TableColumn fx:id="etageCol" prefWidth="75.0" text="etage" />
+                        <TableColumn fx:id="disponibiliteCOL" prefWidth="87.0" text="disponibilite" />
+                        <TableColumn fx:id="ImageCOL" prefWidth="75.0" text="image" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="etage" layoutX="13.0" layoutY="351.0" promptText="Etage" />
+                  <ComboBox fx:id="disponibilitee" layoutX="13.0" layoutY="424.0" prefWidth="150.0" promptText="disponiblitee" />
+                  <ImageView fx:id="imgVw" fitHeight="100.0" fitWidth="117.0" layoutX="605.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="load" layoutX="224.0" layoutY="59.0" mnemonicParsing="false" onAction="#processUpload" prefHeight="44.0" prefWidth="77.0" text="load" />
+                  <TextField fx:id="path" layoutX="325.0" layoutY="78.0" />
+                  <TextField fx:id="name" layoutX="506.0" layoutY="78.0" />
+                  <Button fx:id="PDF_open" layoutX="629.0" layoutY="35.0" mnemonicParsing="false" onAction="#PDF_open" prefHeight="25.0" prefWidth="77.0" text="PDF" />
+                  <Button fx:id="updateImageid" layoutX="404.0" layoutY="437.0" mnemonicParsing="false" onMouseClicked="#Mouse_click_updateImage" prefHeight="44.0" prefWidth="105.0" text="Button" />
+                  <Label fx:id="erreur" layoutX="28.0" layoutY="126.0" prefHeight="17.0" prefWidth="167.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

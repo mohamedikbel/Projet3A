@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="photo" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: none;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.pkg3a5.ProfileController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="173.0" style="-fx-background-color: #2BDFA3;">
+         <children>
+            <Button layoutX="9.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnClientetFormation" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: trensparent;" styleClass="main_btn" text="Gestion  Formations" textAlignment="CENTER" textFill="#ff1500">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="12.0" layoutY="72.0" mnemonicParsing="false" onAction="#btnEvent" prefHeight="44.0" prefWidth="149.0" style="-fx-background-color: trensparent;" styleClass="main_btn" text="Gestion Evenements" textAlignment="CENTER" textFill="#ff0202">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="9.0" layoutY="133.0" mnemonicParsing="false" onAction="#btnBiblio" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: trensparent;" styleClass="main_btn" text="Gestion Bibliotheque" textAlignment="CENTER" textFill="#f50000">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="9.0" layoutY="193.0" mnemonicParsing="false" onAction="#btnMusee" prefHeight="44.0" prefWidth="149.0" style="-fx-background-color: trensparent;" styleClass="main_btn" text="Gestion Musee" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="6.0" layoutY="248.0" mnemonicParsing="false" onAction="#btnEspace" prefHeight="52.0" prefWidth="156.0" style="-fx-background-color: trensparent;" styleClass="main_btn" text="Gestion Espaces" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+         </children></Pane>
+      <Pane layoutX="172.0" layoutY="46.0" prefHeight="107.0" prefWidth="429.0" style="-fx-background-color: #8f8f8f;">
+         <children>
+            <Circle fx:id="impro" fill="DODGERBLUE" layoutX="91.0" layoutY="86.0" radius="63.0" stroke="BLACK" strokeType="INSIDE" />
+            <TextField fx:id="username" editable="false" layoutX="154.0" layoutY="47.0" prefHeight="27.0" prefWidth="75.0" style="-fx-background-color: none; -fx-text-fill: #ffffff;" text="SDIRI ">
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="usermail" editable="false" layoutX="163.0" layoutY="66.0" prefHeight="25.0" prefWidth="173.0" style="-fx-background-color: none; -fx-text-fill: #ffffff;" text="mohamedikbel.sdri@esprit.tn" />
+            <ImageView fitHeight="27.0" fitWidth="30.0" layoutX="373.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@edit.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="modif" layoutX="366.0" layoutY="30.0" mnemonicParsing="false" onAction="#onclickediteur" prefHeight="35.0" prefWidth="39.0" style="-fx-background-color: none;">
+                 </Button>
+            <TextField fx:id="username1" editable="false" layoutX="208.0" layoutY="47.0" prefHeight="27.0" prefWidth="149.0" style="-fx-background-color: none; -fx-text-fill: #ffffff;" text="MOHAMED IKBEL">
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <PasswordField fx:id="pass" editable="false" layoutX="322.0" layoutY="221.0" style="-fx-background-color: none;" />
+      <Text fill="#868686" layoutX="212.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de asse :" wrappingWidth="88.951171875">
+         <font>
+            <Font name="Arial Bold Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#7c7c7c" layoutX="210.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Num tel :" wrappingWidth="107.99999678134918">
+         <font>
+            <Font name="Arial Bold Italic" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="save" disable="true" layoutX="322.0" layoutY="345.0" mnemonicParsing="false" onAction="#modif" prefHeight="27.0" prefWidth="108.0" style="-fx-background-color: #2cc48d;" text="Enregistrer" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="pass1" layoutX="316.0" layoutY="253.0" style="-fx-background-color: none;" translateX="1.0" translateY="1.0" translateZ="1.0" />
+      <Button fx:id="phot" disable="true" layoutX="291.0" layoutY="172.0" mnemonicParsing="false" onAction="#modifphoto" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: #8f8f8f;" text="Button" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="1.0" layoutY="310.0" mnemonicParsing="false" onAction="#brnReclamationetpromotions" prefHeight="52.0" prefWidth="163.0" style="-fx-background-color: trensparent;" styleClass="main_btn" text="Gestion reclamations " textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Corbel" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

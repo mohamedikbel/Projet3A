@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="836.0" prefWidth="1620.0" stylesheets="@store.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.pkg3a5.menubackController">
+   <children>
+      <AnchorPane prefHeight="836.0" prefWidth="1620.0" style="-fx-background-color: #3f1059;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="186.0" layoutX="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../tr.png" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="603.0" prefWidth="16.0" style="-fx-background-color: #ae55e0;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="188.0" prefWidth="1428.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="188.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="-5.0" layoutY="-1.0" prefHeight="22.0" prefWidth="720.0" style="-fx-background-color: #3f1059;" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="-1.0">
+               <children>
+                  <Label layoutX="22.0" layoutY="-2.0" prefHeight="17.0" prefWidth="573.0" text="Cité De Culture Tunisie" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft PhagsPa" size="19.0" />
+                     </font>
+                  </Label>
+   </children>
+<!--
+
+</AnchorPane>
+  
+  
+  // fin vrai code 
+-->
+
+
+
+
+
+
+
+
+<!--
+nouveaux
+
+-->
+
+
+
+    
+            </Pane>
+            <PieChart fx:id="piechart" layoutX="246.0" layoutY="34.0" prefHeight="548.0" prefWidth="760.0" />
+            <Button layoutX="339.0" layoutY="145.0" mnemonicParsing="false" onAction="#btnmenu" prefHeight="79.0" prefWidth="185.0" styleClass="main_btn" text="Menu " textAlignment="CENTER">
+               <font>
+                  <Font name="Corbel" size="38.0" />
+               </font>
+            </Button>
+            <Button layoutX="251.0" layoutY="224.0" mnemonicParsing="false" onAction="#btnClientetFormation" prefHeight="71.0" prefWidth="362.0" styleClass="main_btn" text="Gestion Clients et Formations" textAlignment="CENTER">
+               <font>
+                  <Font name="Corbel" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="299.0" layoutY="308.0" mnemonicParsing="false" onAction="#btnEvent" prefHeight="71.0" prefWidth="266.0" styleClass="main_btn" text="Gestion Evenements" textAlignment="CENTER">
+               <font>
+                  <Font name="Corbel" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="290.0" layoutY="383.0" mnemonicParsing="false" onAction="#btnBiblio" prefHeight="71.0" prefWidth="285.0" styleClass="main_btn" text="Gestion Bibliotheque" textAlignment="CENTER">
+               <font>
+                  <Font name="Corbel" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="335.0" layoutY="437.0" mnemonicParsing="false" onAction="#btnMusee" prefHeight="71.0" prefWidth="195.0" styleClass="main_btn" text="Gestion Musee" textAlignment="CENTER">
+               <font>
+                  <Font name="Corbel" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="329.0" layoutY="508.0" mnemonicParsing="false" onAction="#btnEspace" prefHeight="71.0" prefWidth="222.0" styleClass="main_btn" text="Gestion Espaces" textAlignment="CENTER">
+               <font>
+                  <Font name="Corbel" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="239.0" layoutY="579.0" mnemonicParsing="false" onAction="#brnReclamationetpromotions" prefHeight="71.0" prefWidth="418.0" styleClass="main_btn" text="Gestion reclamations et promotions" textAlignment="CENTER">
+               <font>
+                  <Font name="Corbel" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+   
+   
+
+   
+</AnchorPane>
